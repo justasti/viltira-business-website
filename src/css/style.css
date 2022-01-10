@@ -127,7 +127,7 @@ nav ul li a:hover {
   padding: 1rem;
   text-align: center;
   transition: 0.3s ease-out;
-  width: 30%;
+  width: 33.3333333333%;
 }
 .column--light {
   background-color: var(--bg-light);
