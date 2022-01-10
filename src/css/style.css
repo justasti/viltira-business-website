@@ -115,7 +115,6 @@ nav ul li a:hover {
 #presentation {
   display: flex;
   gap: 2rem;
-  margin: 0 2rem;
   margin-top: -8rem;
 }
 
@@ -127,7 +126,6 @@ nav ul li a:hover {
   padding: 1rem;
   text-align: center;
   transition: 0.3s ease-out;
-  width: 33.3333333333%;
 }
 .column--light {
   background-color: var(--bg-light);

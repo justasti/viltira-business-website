@@ -110,7 +110,6 @@ nav {
 #presentation {
   display: flex;
   gap: 2rem;
-  margin: 0 2rem;
   margin-top: -8rem;
 }
 
@@ -122,7 +121,7 @@ nav {
   padding: 1rem;
   text-align: center;
   transition: 0.3s ease-out;
-  width: calc(100% / 3);
+  // width: calc(100% / 3);
   &--light {
     background-color: var(--bg-light);
     color: var(--text-main);
