@@ -89,24 +89,28 @@ nav {
   }
 }
 .btn {
-  display: inline-block;
   border-radius: 0.3rem;
+  color: white;
+  display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.08rem;
   padding: 0.8rem 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  &--green {
-    color: var(--bg-light);
-    background-color: var(--secondary-color);
-    transition: 0.2s ease-out;
-    margin-bottom: 2rem;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  &.from-center {
+    background: linear-gradient(#528a56, #528a56) no-repeat,
+      var(--secondary-color);
+    background-size: 0% 100%; /* Or 100% 0% */
+    background-position: center;
     &:hover {
-      background-color: #284229;
+      background-size: 100% 100%;
+      box-shadow: inset -2px -3px #342a21;
     }
   }
 }
+
 #presentation {
   display: flex;
   gap: 2rem;
@@ -219,3 +223,25 @@ nav {
     color: #f1e0c5;
   }
 }
+#contact {
+  .contact-form {
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    margin: 2rem 0;
+  }
+  form {
+    margin: 1rem;
+    input {
+      background-color: var(--main-color);
+      border: none;
+      color: var(--text-light);
+      box-shadow: none;
+      display: block;
+      margin: 2rem 0;
+      &#file {
+        display: none;
+      }
+    }
+  }
+}
+// ---------------------------------------------
